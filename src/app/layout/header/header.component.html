@@ -1,1 +1,44 @@
-<p>header works!</p>
+<p>
+  <mat-toolbar class="container">
+    <div class="left">
+      <span>L-Books</span>
+    </div>
+    <section>
+      <div class="example-button-row">
+        <a mat-button routerLink="home" routerLinkActive="router-active">Home</a>
+        <a mat-button routerLink="book" routerLinkActive="router-active">Book</a>
+        <a mat-button routerLink="about" routerLinkActive="router-active">About</a>
+      </div>
+    </section>
+    <!-- <span class="example-spacer"></span> -->
+    <div class="example-container">
+
+      <mat-form-field>
+        <mat-label>Search A Book</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <button
+        mat-icon-button
+      >
+        <mat-icon>manage_search</mat-icon>
+      </button>
+    </div>
+    
+    <div class="right">
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with person icon"
+      >
+        <mat-icon>person</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</p>

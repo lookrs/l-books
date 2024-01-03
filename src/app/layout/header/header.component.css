@@ -1,0 +1,18 @@
+/* .example-spacer {
+  flex: 1 1 auto;
+} */
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.example-spacer{
+  margin-top: 5px;
+}
+.example-container{
+  display: flex;
+  justify-content: center;
+}
+.router-active{
+  background-color: rgb(228, 213, 220);
+
+}
