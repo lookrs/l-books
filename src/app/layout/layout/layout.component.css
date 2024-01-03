@@ -12,3 +12,8 @@
 .center {
   flex-basis: calc(6 * (100% - 6 * 1em) / 8);
 }
+
+.card-out{
+  height: 85vh;
+  overflow: auto;
+}

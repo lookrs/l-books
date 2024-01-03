@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
-import { MatCardModule } from '@angular/material/card';
-import { AppCarouselComponent } from './app-carousel/app-carousel.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [HomeComponent, AppCarouselComponent],
-  imports: [CommonModule, HomeRoutingModule, MatCardModule, MatIconModule,MatButtonModule],
+  declarations: [HomeComponent],
+  imports: [HomeRoutingModule, SharedModule],
 })
 export class HomeModule {}

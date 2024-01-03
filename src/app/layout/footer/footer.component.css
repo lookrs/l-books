@@ -1,0 +1,10 @@
+footer{
+  color: #6c6767;
+  font-size: 0.8rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
