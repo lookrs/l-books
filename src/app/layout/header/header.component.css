@@ -11,7 +11,9 @@
 .example-container{
   display: flex;
   justify-content: center;
+  align-items: center; 
 }
+
 .router-active{
   background-color: rgb(228, 213, 220);
 

@@ -1,0 +1,13 @@
+<!-- app-carousel.component.html -->
+<mat-card>
+  <img [src]="slides[currentIndex].image" alt="Slide" />
+  <mat-card-content>
+    <p>{{ slides[currentIndex].caption }}</p>
+  </mat-card-content>
+</mat-card>
+<button mat-icon-button (click)="prevSlide()">
+  <mat-icon>chevron_left</mat-icon>
+</button>
+<button mat-icon-button (click)="nextSlide()">
+  <mat-icon>chevron_right</mat-icon>
+</button>
