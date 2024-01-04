@@ -1,15 +1,18 @@
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title-group>
-      <img
-        mat-card-md-image
-        src="https://img2.doubanio.com/view/subject/s/public/s28024431.jpg"
-      />
-      <mat-card-title>Metaphors We Live By</mat-card-title>
-      <mat-card-subtitle>[美] 乔治·莱考夫</mat-card-subtitle>
-    </mat-card-title-group>
-  </mat-card-header>
-  <mat-card-content>
-    本书作为当代语言学经典著作，是公认的认知语言学隐喻系统研究的开始，在国外隐喻研究中具有很大影响。本书作为当代语言学经典著作，是公认的认知语言学隐喻系统研究的开始，在国外隐喻研究中具有很大影响。
-  </mat-card-content>
-</mat-card>
+<ng-container
+  *ngIf="books.length === 0; else loadedContent"
+  class="flex items-center justify-center h-screen"
+>
+  <div
+    class="animate-spin rounded-full border-t-4 border-blue-500 border-opacity-25 h-12 w-12"
+  ></div>
+</ng-container>
+<ng-template #loadedContent>
+  <div class="flex flex-wrap gap-5">
+    <div *ngFor="let book of books" class="container">
+      <book-introduction
+        [bookInfo]="book"
+        class="card hover:shadow-lg transform hover:scale-105 transition-transform"
+      ></book-introduction>
+    </div>
+  </div>
+</ng-template>

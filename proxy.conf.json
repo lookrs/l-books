@@ -1,0 +1,7 @@
+{
+  "/search": {
+    "target": "https://api.douban.com/v2/book",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

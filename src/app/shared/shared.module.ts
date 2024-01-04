@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [],
@@ -17,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
+    HttpClientModule
   ],
   exports:[
     CommonModule,
@@ -26,6 +28,7 @@ import { MatCardModule } from '@angular/material/card';
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
+    HttpClientModule
   ]
 })
 export class SharedModule {}
