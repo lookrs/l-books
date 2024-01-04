@@ -1,5 +1,5 @@
 <ng-container
-  *ngIf="books.length === 0; else loadedContent"
+  *ngIf="books?.length === 0; else loadedContent"
   class="flex items-center justify-center h-screen"
 >
   <div
@@ -8,9 +8,10 @@
 </ng-container>
 <ng-template #loadedContent>
   <div class="flex flex-wrap gap-5">
-    <div *ngFor="let book of books" class="container">
+    <div *ngFor="let book of getBooks" class="container">
       <book-introduction
         [bookInfo]="book"
+        (toDouBan)="toDouBanPage($event)"
         class="card hover:shadow-lg transform hover:scale-105 transition-transform"
       ></book-introduction>
     </div>

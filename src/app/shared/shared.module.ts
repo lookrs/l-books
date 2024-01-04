@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,8 @@ import { HttpClientModule } from "@angular/common/http";
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   exports:[
     CommonModule,
@@ -28,7 +30,8 @@ import { HttpClientModule } from "@angular/common/http";
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ]
 })
 export class SharedModule {}

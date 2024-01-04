@@ -11,7 +11,7 @@ export class BookIntroductionCardComponent {
 
   @Output() toDouBan: EventEmitter<string> = new EventEmitter<string>();
 
-  goDouBan(url: string): void {
+  goDouBan() {
     this.toDouBan.emit(this.bookInfo.alt);
   }
 

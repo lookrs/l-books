@@ -12,8 +12,16 @@ export class HomeComponent implements OnInit {
 
   constructor(private _doubanService: DoubanServiceService) {}
   ngOnInit(): void {
-    this._doubanService.searchbook('小王子').subscribe((data: any) => {
-      this.books = data.books;
+    this._doubanService.getBookInfo().subscribe((res: any) => {
+      this.books = res;
     });
+  }
+
+  toDouBanPage(url: string): void {
+    window.open(url, '_blank');
+  }
+
+  get getBooks(): Array<Book> {
+    return this.books;
   }
 }

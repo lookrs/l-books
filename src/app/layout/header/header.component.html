@@ -23,11 +23,9 @@
     <div class="example-container">
       <mat-form-field>
         <mat-label>Search A Book</mat-label>
-        <input matInput />
+        <input matInput name="search_book" [(ngModel)]="keyWord" />
       </mat-form-field>
-      <button
-        mat-icon-button
-      >
+      <button (click)="searchBook()" mat-icon-button>
         <mat-icon>manage_search</mat-icon>
       </button>
     </div>
